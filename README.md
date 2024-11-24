@@ -5,7 +5,7 @@ This is a simple Flask Application that displays a form on the homepage and proc
 ## Features
 - Displays a form with fields for user input (`name` and `color`).
 - Processes the form submission and renders a result page.
-- Suppose one has input his/her name and selected a color, the output will print the name in that color.
+- Suppose, one has input his/her name and selected a color, the output will print the name in that color.
 - Dockerized for seamless setup and deployment.
 
 ## File Structure
@@ -21,6 +21,30 @@ This is a simple Flask Application that displays a form on the homepage and proc
 ├── Dockerfile # Docker configuration file  
 
 ├── requirements.txt # Python dependencies
+
+## Dockerfile breakdown
+
+# Use a base image with Python
+FROM python:3.11-slim
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy all project files to the container
+COPY . /app
+
+# Expose port for running the flask app in Docker Container
+EXPOSE 5000
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+*requirements.txt file contains the following to run the Flask app that we are dockerizing: 
+Flask==2.3.3
+colorama==0.4.6
+
+# Specifying the command to run the Flask app
+CMD ["python", "app.py"]
 
 
 ## Build the Docker Image
