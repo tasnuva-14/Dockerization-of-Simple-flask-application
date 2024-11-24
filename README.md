@@ -25,4 +25,4 @@ docker run -d -p 3000:5000 final-color
 http://localhost:3000
 
 ## Preview
-![Preview of the Flask App](path/to/your/preview.png)
+![Preview of the Flask App](preview.PNG)
