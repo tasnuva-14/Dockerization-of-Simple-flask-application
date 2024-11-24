@@ -9,10 +9,17 @@ This is a simple Flask Application that displays a form on the homepage and proc
 - Dockerized for seamless setup and deployment.
 
 ## File Structure
+
 ├── app.py # Main Flask application 
 
-├── templates/ │ ├── form.html # HTML template for the form │ ├── result.html # HTML template for the result 
+├── templates/ 
+
+│ ├── form.html # HTML template for the form
+
+│ ├── result.html # HTML template for the result 
+
 ├── Dockerfile # Docker configuration file  
+
 ├── requirements.txt # Python dependencies
 
 
