@@ -24,3 +24,5 @@ docker run -d -p 3000:5000 final-color
 ## The application will be accessible at
 http://localhost:3000
 
+## Preview
+![Preview of the Flask App](path/to/your/preview.png)
