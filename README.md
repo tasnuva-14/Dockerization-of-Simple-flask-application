@@ -58,4 +58,6 @@ http://localhost:3000
 
 ## Preview
 ![Preview of the Flask App](preview.PNG)
+
+
 ![Preview of the Flask App](result.PNG)
